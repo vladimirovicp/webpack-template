@@ -1,0 +1,135 @@
+.footer{
+  background-color: #000;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+  color: #fff;
+
+  &__wrapper{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__sponsor{
+    display: flex;
+    &_logo{
+      width: 24.7rem;
+      height: 17rem;
+      margin-right: 3.1rem;
+
+      &2{
+        width: 16rem;
+        margin: 0 auto;
+      }
+    }
+    &_text{
+      margin-top: -1rem;
+      font-weight: 700;
+      font-size: 2.4rem;
+      line-height: 150%;
+      text-transform: uppercase;
+        & span{
+          display: block;
+        }
+    }
+  }
+
+  &__grant{
+    &_name{
+      font-size: 2.2rem;
+      line-height: 150%;
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  &__order{
+    &_link{
+      font-size: 1.6rem;
+      line-height: 150%;
+      margin-left: 2rem;
+      margin-bottom: .5rem;
+      transition: color 0.5s;
+    }
+  }
+
+  &__copy{
+    margin-top: 2rem;
+    font-size: 1.6rem;
+    line-height: 118.75%;
+    text-align: center;
+  }
+
+}
+
+@media (max-width: 48em) {
+
+  .footer{
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+
+    &__wrapper{
+      flex-direction: column;
+    }
+
+    &__sponsor{
+      justify-content: center;
+      margin-bottom: 7rem;
+      &_logo{
+
+      }
+      &_text{
+        font-size: 2.3rem;
+        & span{
+        }
+      }
+    }
+
+    &__grant{
+      &_name{
+        font-size: 3.3rem;
+        margin-bottom: 3rem;
+      }
+    }
+
+    &__order{
+      margin-bottom: 1rem;
+      margin-left: 2rem;
+      &_link{
+        font-size: 2.8rem;
+        margin-left: 0;
+
+
+      }
+    }
+
+    &__copy{
+      border-top: 0.2rem solid #e1e1e1;
+      padding-top: 2rem;
+      font-size: 2rem;
+      text-align: left;
+    }
+
+  }
+
+}
+
+@media (min-width: 48em) {
+  .footer{
+    &__order {
+      &_link {
+        &:hover{
+          color: #008BBF;
+        }
+      }
+    }
+  }
+}
+
+//@media (max-width: 30em) { //480
+//  .footer{
+//    &__sponsor{
+//      &_logo{
+//        margin-right: 2.3rem;
+//      }
+//    }
+//  }
+//}
